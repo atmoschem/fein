@@ -1,11 +1,34 @@
 Package: fein
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Fixed Emissions Inventories
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Date: 2023-07-20
+Authors@R: c( 
+  person(given="Tailine", family="Santos", 
+         role = c("aut", "cre"),
+         email="tailine.atm@gmail.com",
+         comment = c(ORCID = "0000-0001-7723-9050")),
+  person(given = "Sergio", family = "Ibarra-Espinosa",
+         role = "ctb",
+         email = "zergioibarra@gmail.com",
+         comment = c(ORCID = "0000-0002-3162-1905")))
+Description: Elaboration of vehicular emissions inventories,
+    consisting in four stages, pre-processing activity data, preparing 
+    emissions factors, estimating the emissions and post-processing of emissions 
+    in maps and databases. More details in Ibarra-Espinosa et al (2018) <doi:10.5194/gmd-11-2209-2018>.
+    Before using VEIN you need to know the vehicular composition of your study area, in other words,
+    the combination of of type of vehicles, size and fuel of the fleet. Then, it is recommended to
+    start with the project to download a template to create a structure of directories and scripts.
+License: GPL
+URL: https://github.com/atmoschem/fein
+BugReports: https://github.com/atmoschem/fein/issues
+LazyData: no
+Depends: R (>= 3.5.0)
+Imports: sf (>= 1.0.1), data.table, units, graphics, stats, cptcity, grDevices
+Suggests: knitr, rmarkdown, testthat
+RoxygenNote: 7.2.3
 Encoding: UTF-8
-LazyData: true
+NeedsCompilation: no
+Config/testthat/parallel: true
+Packaged: 2023-07-20 08:14:00 UTC; tailine
+VignetteBuilder: knitr
