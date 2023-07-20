@@ -1,3 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^\pasta\
+^\README_files\
+^\README.Rmd\
+^\README.md\
