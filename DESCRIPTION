@@ -12,12 +12,17 @@ Authors@R: c(
          role = "ctb",
          email = "zergioibarra@gmail.com",
          comment = c(ORCID = "0000-0002-3162-1905")))
-Description: Elaboration of vehicular emissions inventories,
+  person(given = "Iara", family = "Silva",
+         role = "ctb",
+         email = "iaradasilva@usp.br",
+         comment = c(ORCID = "0000-0003-1306-5906")))
+
+Description: Elaboration of fix emissions inventories,
     consisting in four stages, pre-processing activity data, preparing 
     emissions factors, estimating the emissions and post-processing of emissions 
-    in maps and databases. More details in Ibarra-Espinosa et al (2018) <doi:10.5194/gmd-11-2209-2018>.
-    Before using VEIN you need to know the vehicular composition of your study area, in other words,
-    the combination of of type of vehicles, size and fuel of the fleet. Then, it is recommended to
+    in maps and databases. More details in  <doi:>.
+    Before using FEIN you need to know the industrial composition of your study area, in other words,
+    the combination of industrial type, size and fuel of the fleet. Then, it is recommended to
     start with the project to download a template to create a structure of directories and scripts.
 License: GPL
 URL: https://github.com/atmoschem/fein
