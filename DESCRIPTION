@@ -16,7 +16,6 @@ Authors@R: c(
          role = "ctb",
          email = "iaradasilva@usp.br",
          comment = c(ORCID = "0000-0003-1306-5906")))
-
 Description: Elaboration of fix emissions inventories,
     consisting in four stages, pre-processing activity data, preparing 
     emissions factors, estimating the emissions and post-processing of emissions 
