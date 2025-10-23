@@ -1,21 +1,21 @@
 Package: fein
 Type: Package
 Title: Fixed Emissions Inventories
-Version: 0.1.0
-Date: 2023-07-20
+Version: 0.3.0
+Date: 2025-10-23
 Authors@R: c( 
-  person(given="Tailine", family="Santos", 
-         role = c("aut", "cre"),
-         email="tailine.atm@gmail.com",
-         comment = c(ORCID = "0000-0001-7723-9050")),
+  person(given = "Iara", family = "Silva",
+         role = "aut",
+         email = "iaradasilva@usp.br",
+         comment = c(ORCID = "0000-0003-1306-5906")),
   person(given = "Sergio", family = "Ibarra-Espinosa",
          role = "ctb",
          email = "zergioibarra@gmail.com",
-         comment = c(ORCID = "0000-0002-3162-1905")))
-  person(given = "Iara", family = "Silva",
-         role = "ctb",
-         email = "iaradasilva@usp.br",
-         comment = c(ORCID = "0000-0003-1306-5906")))
+         comment = c(ORCID = "0000-0002-3162-1905")),
+  person(given="Tailine", family="Santos", 
+         role = c("cre"),
+         email="tailine.atm@gmail.com",
+         comment = c(ORCID = "0000-0001-7723-9050")))
 Description: Elaboration of fix emissions inventories,
     consisting in four stages, pre-processing activity data, preparing 
     emissions factors, estimating the emissions and post-processing of emissions 
@@ -30,7 +30,7 @@ LazyData: no
 Depends: R (>= 3.5.0)
 Imports: sf (>= 1.0.1), data.table, units, graphics, stats, cptcity, grDevices
 Suggests: knitr, rmarkdown, testthat
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.3
 Encoding: UTF-8
 NeedsCompilation: no
 Config/testthat/parallel: true
