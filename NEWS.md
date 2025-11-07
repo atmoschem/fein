@@ -1,7 +1,12 @@
 NEWS
 ===========
 
-### fein 0.2.0 (date: 2025-10-23)
+### fein 0.4.0 (date: 2025-11-06)
+
+- Add exmaple funciton to return ef
+
+
+### fein 0.3.0 (date: 2025-11-01)
 
 - Add exmaple funciton to return ef
 - Add sysdata with eea and ipcc

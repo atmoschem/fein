@@ -1,21 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/news/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/hello.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/ef_emep.html</loc></url>
+<url><loc>/reference/esri_to_sf_geom.html</loc></url>
+<url><loc>/reference/esri_to_sf_point.html</loc></url>
+<url><loc>/reference/esri_to_sf_polygon.html</loc></url>
+<url><loc>/reference/esri_to_sf_polyline.html</loc></url>
+<url><loc>/reference/get_esri_features.html</loc></url>
+<url><loc>/reference/get_esri_features_by_ids.html</loc></url>
+<url><loc>/reference/get_object_ids.html</loc></url>
+<url><loc>/reference/hello.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/layer_info.html</loc></url>
 </urlset>
+

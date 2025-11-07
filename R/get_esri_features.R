@@ -1,0 +1,57 @@
+#' get features
+#'
+#'@description get features.
+#'
+#'
+#' @param url Character, default .
+#' @param query_url Character.
+#' @param where Character.
+#' @param token Character.
+#' @param ssl Logical, default = FALSE.
+#' @export
+#' @seealso \code{\link{layer_info}}
+#' @examples \dontrun{
+#' # do not run
+#' (geom_type <- layer_info()$geometryType)
+#' # rede
+#' url1 = paste0("http://portal1.snirh.gov.br/ana/",
+#' "rest/services/Esta%C3%A7%C3%B5es_da_",
+#' "Rede_Hidrometeorol%C3%B3gica_Nacional",
+#' "_em_Opera%C3%A7%C3%A3o/MapServer/1")
+#' # hidroweb
+#' url1 = paste0("http://portal1.snirh.gov.br/ana/",
+#' "rest/services/Esta%C3%A7%C3%B5es_da_",
+#' "Rede_Hidrometeorol%C3%B3gica_Nacional",
+#' "_em_Opera%C3%A7%C3%A3o/MapServer/4")
+#' esri_features <- get_esri_features(url2)
+#' simple_features <- esri_to_sf_geom(esri_features, geom_type = geom_type)
+#' }
+get_esri_features <- function(
+  url = paste0(
+    "http://portal1.snirh.gov.br/ana/",
+    "rest/services/Esta%C3%A7%C3%B5es_da_",
+    "Rede_Hidrometeorol%C3%B3gica_Nacional",
+    "_em_Opera%C3%A7%C3%A3o/MapServer/1"
+  ),
+  query_url = paste(url, "query", sep = "/"),
+  fields = c("*"),
+  where = "1=1",
+  token = ''
+) {
+  ids <- get_object_ids(url = url, query_url, where, token)
+  if (is.null(ids)) {
+    warning("No records match the search critera")
+    return()
+  }
+  id_splits <- split(ids, ceiling(seq_along(ids) / 500))
+  results <- lapply(
+    id_splits,
+    get_esri_features_by_ids,
+    url,
+    query_url,
+    fields,
+    token
+  )
+  merged <- unlist(results, recursive = FALSE)
+  return(merged)
+}
