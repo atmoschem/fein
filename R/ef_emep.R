@@ -31,6 +31,7 @@ ef_emep <- function(
     stop("One nfr at a time please")
   }
 
+  NFR <- tiers <- Fuel <- Abatement <- Pollutant <- NULL
   nfrs <- eea[grepl("1.A", NFR), unique(NFR)]
   if (!nfr %in% nfrs) {
     stop(cat("only these nfr  allowed: ", nfrs, sep = " "))

@@ -25,6 +25,8 @@ get_object_ids(
 \item{token}{Character.}
 
 \item{ssl}{Logical, default = FALSE.}
+
+\item{full}{Logical, default = FALSE.}
 }
 \description{
 get layer info.

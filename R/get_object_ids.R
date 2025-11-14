@@ -8,6 +8,7 @@
 #' @param where Character.
 #' @param token Character.
 #' @param ssl Logical, default = FALSE.
+#' @param full Logical, default = FALSE.
 #' @importFrom jsonlite fromJSON
 #' @importFrom httr content POST config
 #' @export

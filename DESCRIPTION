@@ -1,8 +1,8 @@
-Package: fein
+Package: pega
 Type: Package
-Title: Fixed Emissions Inventories
-Version: 0.4.0
-Date: 2025-11-06
+Title: Pollutants Emissions and Gaseous of the Atmosphere
+Version: 0.5.0
+Date: 2025-11-14
 Authors@R: c( 
   person(given = "Sergio", family = "Ibarra-Espinosa",
          role = "aut",
@@ -20,15 +20,15 @@ Description: Elaboration of fix emissions inventories,
     consisting in four stages, pre-processing activity data, preparing 
     emissions factors, estimating the emissions and post-processing of emissions 
     in maps and databases. More details in  <doi:>.
-    Before using FEIN you need to know the industrial composition of your study area, in other words,
+    Before using PEGA you need to know the industrial composition of your study area, in other words,
     the combination of industrial type, size and fuel of the fleet. Then, it is recommended to
     start with the project to download a template to create a structure of directories and scripts.
 License: GPL
-URL: https://github.com/atmoschem/fein
-BugReports: https://github.com/atmoschem/fein/issues
+URL: https://github.com/atmoschem/pega
+BugReports: https://github.com/atmoschem/pega/issues
 LazyData: no
 Depends: R (>= 3.5.0)
-Imports: sf, data.table, units, sf, magrittr, jsonlite, httr, units
+Imports: sf, data.table, magrittr, jsonlite, httr
 Suggests: knitr, rmarkdown, testthat
 RoxygenNote: 7.3.3
 Encoding: UTF-8

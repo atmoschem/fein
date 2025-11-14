@@ -1,6 +1,12 @@
 NEWS
 ===========
 
+### pega 0.5.0 (date: 2025-11-06)
+
+- Renamed pega: 
+-- Poluentes, Emissões e Gases de Atmosfera.
+-- Pollutants Emissions and Gaseous of the Atmosphere.
+
 ### fein 0.4.0 (date: 2025-11-06)
 
 - Add exmaple funciton to return ef

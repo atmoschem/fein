@@ -5,9 +5,9 @@
 #'
 #' @param url Character, default .
 #' @param query_url Character.
+#' @param fields description
 #' @param where Character.
 #' @param token Character.
-#' @param ssl Logical, default = FALSE.
 #' @export
 #' @seealso \code{\link{layer_info}}
 #' @examples \dontrun{

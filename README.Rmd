@@ -1,7 +1,12 @@
 ---
-title: "FEIN"
 output: github_document
 ---
+
+# PEGA <img src="man/figures/logo.png" align="right" alt="" width="220" />
+
+
+- Poluentes, Emissões e Gases de Atmosfera.
+- Pollutants Emissions and Gaseous of the Atmosphere.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -9,5 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Descrição
 
-Aqui vai estar a documentação do FEIN
+Aqui vai estar a documentação do PEGA
+
+
 

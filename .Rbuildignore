@@ -4,3 +4,5 @@ pasta
 README_files
 README.Rmd
 README.md
+docs
+^pkgdown$

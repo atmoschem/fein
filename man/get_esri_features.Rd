@@ -19,11 +19,11 @@ get_esri_features(
 
 \item{query_url}{Character.}
 
+\item{fields}{description}
+
 \item{where}{Character.}
 
 \item{token}{Character.}
-
-\item{ssl}{Logical, default = FALSE.}
 }
 \description{
 get features.
