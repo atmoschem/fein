@@ -11,6 +11,7 @@
 #' @keywords  emission factors
 #' @export
 #' @examples {
+#' ef_emep(tier = 1, fuel = "Natural gas", pol = "PM2.5")
 #' # ef_eea(category = "NAO SEI")
 #' }
 ef_emep <- function(
@@ -39,18 +40,27 @@ ef_emep <- function(
   ef <- eea[NFR == nfr]
 
   # tier ####
+  tiersx <- ef[, unique(tiers)]
 
+  if (missing(tier)) {
+    stop(cat("Select one of:", tiersx, sep = "\n"))
+  }
   if (length(tier) > 1) {
     stop("One tier at a time please")
   }
 
-  tiersx <- ef[, unique(tiers)]
   if (!tier %in% tiersx) {
-    stop(cat("only these tiers  allowed: ", tiersx, sep = " "))
+    stop(cat("only these tiers  allowed: ", tiersx, sep = "\n"))
   }
   ef <- ef[tiers == tier]
 
   # fuel ####
+
+  fuelssx <- ef[, unique(Fuel)]
+
+  if (missing(fuel)) {
+    stop(cat("Select one of:", fuelssx, sep = "\n"))
+  }
 
   if (length(fuel) > 1) {
     stop("One fuel at a time please")
@@ -77,6 +87,11 @@ ef_emep <- function(
   # pol ####
 
   pols <- ef[, unique(Pollutant)]
+
+  if (missing(pol)) {
+    stop(cat("Select one of:", pols, sep = "\n"))
+  }
+
   if (any(!pol %in% pols)) {
     stop(cat("only these Pollutants  allowed: ", pols, sep = " "))
   }
