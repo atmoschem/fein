@@ -1,9 +1,11 @@
 PEGA
 ================
 
-# PEGAss <img src="man/figures/logo.png" align="right" alt="" width="220" />
+# PEGA <img src="man/figures/logo.png" align="right" alt="" width="220" />
 
-Pollutants Emissions and Gaseous of the Atmosphere.
+
+- Poluentes, Emissões e Gases de Atmosfera.
+- Pollutants Emissions and Gaseous of the Atmosphere.
 
 ## Descrição
 
